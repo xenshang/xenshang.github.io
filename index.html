@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Mobile</title>
+    <style>
+        .desktop-message {
+            display: none; /* Masquer le message par défaut */
+        }
+        
+        @media (min-width: 768px) { /* Ajustez la valeur selon vos besoins */
+            .desktop-message {
+                display: block; /* Afficher le message pour les écrans de bureau */
+            }
+            .mobile-message {
+                display: none; /* Masquer le message mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-message">
+        Bienvenue sur notre site mobile !
+    </div>
+
+    <div class="desktop-message">
+        Vous accédez à notre site depuis un ordinateur. Veuillez utiliser un appareil mobile pour une meilleure expérience.
+    </div>
+
+</body>
+</html>
